@@ -1,9 +1,10 @@
 (function () {
-    
+    let del = require('./delete.js')
+	
     let array = [];
     let initialize = false;
     let commands = {
-       
+       delete: del
 
     };
 
