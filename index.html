@@ -7,13 +7,14 @@
 
 
 </head>
+<body>
 <textarea id="console" disabled></textarea>
 <input class="input" id="input"/>
 <button class="input" id="submit">&crarr;</button>
 <script src="node_modules/systemjs/dist/system.js">
 </script>
 <script>
-    System.config({ meta: { format: 'cjs' } });
+    System.config({meta: {format: 'cjs'}});
     System.import('./functions/consoleReader.js');
 </script>
 
