@@ -5,6 +5,8 @@
     let count = require('./count.js')
     let insert = require('./insert.js')
     let end = require('./end.js')
+	let sort = require('./sort.js')
+	let reverse = require('./reverse.js')
 	
     let array = [];
     let initialize = false;
@@ -14,7 +16,9 @@
 	   append,
 	   count,
 	   insert,
-	   end
+	   end,
+	   sort,
+	   reverse,
 
     };
 
