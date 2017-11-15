@@ -4,7 +4,7 @@ function sort(arr, params){
     }
 
     return arr.sort(function(a,b){
-        if(typeof a === "number" && typeof b === "number"){
+        if(!isNaN(Number(a)) && !isNaN(Number(b))){
             return a-b;
         }
         else{

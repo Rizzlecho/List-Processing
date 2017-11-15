@@ -4,6 +4,6 @@ function prepend(arr, params) {
     }
 
     let res = arr;
-    res.unshift(params);
+    res.unshift(params[0]);
     return res
 }

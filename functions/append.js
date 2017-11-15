@@ -4,7 +4,7 @@ function append(arr, params) {
     }
 
     let res = arr;
-    res.push(params);
+    res.push(params[0]);
     return res;
 
 }
