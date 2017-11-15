@@ -14,7 +14,29 @@
     input.addEventListener("keypress", (e) => e.code === "Enter" ? submit() : "");
 
     function submit() {
-        
+          let commandTokens = input.value.split(" ").filter(e => e != "");
+        if (!initialize) {
+            array = commandTokens.splice(0);
+            input.value = "";
+            consoleWrite();
+            initialize = true;
+            return;
+        }
+
+        try {
+           let res = commands[commandTokens[0]](array, commandTokens.splice(1));
+            if (typeof res == "string") {
+                errorWrite(res);
+            } else {
+                array = res;
+                consoleWrite();
+            }
+        } catch (err) {
+            console.value += "Error: invalid command\n";
+
+        } finally {
+            input.value = "";
+        }
     }
 
     function consoleWrite() {
