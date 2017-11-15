@@ -1,10 +1,12 @@
 (function () {
     let del = require('./delete.js')
+	let roll = require('./roll.js')
 	
     let array = [];
     let initialize = false;
     let commands = {
-       delete: del
+       delete: del,
+	   roll,
 
     };
 
