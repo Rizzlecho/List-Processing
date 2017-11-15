@@ -4,12 +4,17 @@
     let append = require('./append.js')
     let count = require('./count.js')
     let insert = require('./insert.js')
+    let end = require('./end.js')
 	
     let array = [];
     let initialize = false;
     let commands = {
        delete: del,
 	   roll,
+	   append,
+	   count,
+	   insert,
+	   end
 
     };
 
