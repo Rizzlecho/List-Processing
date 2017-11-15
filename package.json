@@ -1,8 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "List-Processor",
   "version": "1.0.0",
   "dependencies": {
     "requirejs": "2.3.5",
     "systemjs": "0.20.19"
+=======
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "systemjs": "^0.20.19"
+>>>>>>> 92fd9b3019c3a3d5ee02c005115b91f6eaa747ef
   }
 }
