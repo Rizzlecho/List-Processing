@@ -1,6 +1,9 @@
 (function () {
     let del = require('./delete.js')
-	let roll = require('./roll.js')
+    let roll = require('./roll.js')
+    let append = require('./append.js')
+    let count = require('./count.js')
+    let insert = require('./insert.js')
 	
     let array = [];
     let initialize = false;
