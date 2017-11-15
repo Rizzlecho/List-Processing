@@ -4,7 +4,6 @@
     let append = require('./append.js')
     let count = require('./count.js')
     let insert = require('./insert.js')
-    let end = require('./end.js')
 	let sort = require('./sort.js')
 	let reverse = require('./reverse.js')
 	
@@ -16,7 +15,6 @@
 	   append,
 	   count,
 	   insert,
-	   end,
 	   sort,
 	   reverse,
 
@@ -38,7 +36,16 @@
         }
 
         try {
+            if(commandTokens[0] === 'end'){
+             errorWrite("Finished")
+             let elements = document.getElementsByClassName('input')
+             for(let el of elements) {
+                el.style.display="none"
+             }
+             return
+            }
            let res = commands[commandTokens[0]](array, commandTokens.splice(1));
+
             if (typeof res == "string") {
                 errorWrite(res);
             } else {

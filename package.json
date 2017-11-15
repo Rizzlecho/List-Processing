@@ -1,0 +1,8 @@
+{
+  "name": "List-Processor",
+  "version": "1.0.0",
+  "dependencies": {
+    "requirejs": "2.3.5",
+    "systemjs": "0.20.19"
+  }
+}
